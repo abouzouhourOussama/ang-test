@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "name":"ab1",
+        "notes":[
+            {
+                "module":"m1",
+                "note":20,
+                "coeff":7
+
+            }, 
+            {
+                "module":"m2",
+                "note":20,
+                "coeff":3
+
+            },
+            {
+                "module":"m3",
+                "note":20,
+                "coeff":2
+
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name":"ab2",
+        "notes":[
+           
+            {
+                "module":"m2",
+                "note":10,
+                "coeff":3
+
+            },
+            {
+                "module":"m3",
+                "note":15,
+                "coeff":2
+
+            }
+        ]
+    }
+]

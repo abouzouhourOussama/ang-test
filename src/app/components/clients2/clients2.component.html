@@ -1,0 +1,23 @@
+<div class="card text-dark   mb-3">
+    <div class="card-header card bg-warning text-white">Liste Clients json file</div>
+    <div class="card-body">
+    <table class="table  table-striped">
+            <tr>
+              <th>id</th>
+              <th>Name</th>
+              <th>username</th>
+              <th>email</th>
+              <th>phone</th>
+              <th>website</th>
+            </tr>
+            <tr *ngFor="let c of listClients; let i=index">
+              <td>{{c.id}}</td>
+              <td>{{c.name}}</td>
+              <td>{{c.username}}</td>
+              <td>{{c.email}}</td>
+              <td>{{c.phone}}</td>
+              <td>{{c.website}}</td>
+          </tr>
+          </table>
+    </div>
+  </div>

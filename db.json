@@ -1,0 +1,22 @@
+{
+    
+  "products":[
+      {
+      "id":1,
+      "name":"pc",
+      "price":34.34,
+      "selected":true,
+      "available":true
+      },
+      {
+          "id":2,
+          "name":"phone",
+          "price":11.34,
+          "selected":true,
+          "available":true
+      }
+
+
+
+]
+}

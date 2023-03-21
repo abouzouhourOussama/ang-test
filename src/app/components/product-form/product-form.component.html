@@ -1,0 +1,31 @@
+<select (change)="f($event)" >
+<option *ngFor="let p of products">{{p.name}}</option>
+</select>
+<br>
+<input type="number" value="{{selectedProduct.price}}">
+<br>
+<input type="number" [(ngModel)]="qt" >
+<br>
+<button (click)="calcul()"> add</button>
+
+<table *ngIf="this.showDetails">
+<tr>
+    <td>product</td>
+    <td>{{selectedProduct.name}}</td>
+</tr>
+
+<tr>
+    <td>price</td>
+    <td>{{selectedProduct.price}}</td>
+</tr>
+
+<tr>
+    <td></td>
+</tr>
+
+<tr>
+    <td>sum</td>
+    <td>{{sum}}</td>
+</tr>
+
+</table>

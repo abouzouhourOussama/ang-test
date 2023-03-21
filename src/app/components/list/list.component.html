@@ -1,0 +1,26 @@
+<div class="card text-dark   mb-3">
+    <div class="card-header card bg-warning text-white">List Component</div>
+    <div class="card-body">
+     <h2>Contenu</h2>
+
+     <table>
+        <tr>
+            <th>id</th>
+            <th>Name</th>
+            <th>Stock</th>
+            <th>Price</th>
+            <th>Détails avec href</th>
+            <th>avec routerLink</th>
+          </tr>
+        <tr *ngFor="let p of products" >
+        <td>{{p.id}}</td>   
+        <td>{{p.name}}</td>  
+        <td>{{p.stock}}</td> 
+        <td>{{p.price}}</td> 
+        <td> <a href="/pDetails/{{p.id}}"> Détails</a></td>
+        <td> <a routerLink="/pDetails/{{p.id}}"> Détails</a></td>
+        </tr>
+     </table>
+
+    </div>
+  </div>

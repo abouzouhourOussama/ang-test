@@ -1,0 +1,13 @@
+<table>
+<tr>
+<th>module</th>
+<th>note</th>
+</tr>
+<tr *ngFor="let li of currentStudent.notes" >
+    <td >{{li.module}}</td>
+    <td >{{li.note}}</td>
+</tr>
+<tr>
+    <td colspan="2">{{moy}}</td>
+</tr>
+</table>
