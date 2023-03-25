@@ -1,9 +1,11 @@
 <input type="text" [(ngModel)]="itemName"  >
 <button (click)="addItem()" >Add</button>
 <table>
-    <tr *ngFor="let item of items " >
+    <tr *ngFor="let item of items; let i=index " >
+        <td><button>-</button></td>
         <td>{{item.name}}</td>
         <td>{{item.qty}}</td>
+        <td><button (click)="updateQty(i)" >+</button></td>
     </tr>
 </table>
 

@@ -11,12 +11,7 @@ export class ItemsStorageComponent {
   itemName:string="";
   constructor(){
     this.items=[
-      {
-        name:"item 1",qty:2
-      },
-      {
-        name:"item 2",qty:2
-      }
+      
     ]
 
     let itemsString=JSON.stringify(this.items)
@@ -67,5 +62,18 @@ export class ItemsStorageComponent {
     this.items=arrObj
 
   }
+
+  updateQty(i:number){
+    alert(i)
+    let arr=localStorage.getItem("lists")
+
+    //string => objet
+    if(arr!=null){
+      var arrObj=JSON.parse(arr)
+    }
+    console.log(arrObj[i]);
+    
+  }
+
 
 }
