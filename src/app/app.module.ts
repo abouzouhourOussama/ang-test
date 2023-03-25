@@ -24,6 +24,9 @@ import { StudentComponent } from './components/student/student.component';
 import { StudentDetailsComponent } from './components/student-details/student-details.component';
 import { ApiTestComponent } from './component2/api-test/api-test.component';
 import { ItemsStorageComponent } from './components3/items-storage/items-storage.component';
+import { WeatherComponent } from './components/weather/weather.component';
+import { Weather2Component } from './components3/weather2/weather2.component';
+import { TodoListComponent } from './components3/todo-list/todo-list.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +49,10 @@ import { ItemsStorageComponent } from './components3/items-storage/items-storage
     StudentComponent,
     StudentDetailsComponent,
     ApiTestComponent,
-    ItemsStorageComponent
+    ItemsStorageComponent,
+    WeatherComponent,
+    Weather2Component,
+    TodoListComponent
   ],
   imports: [
     BrowserModule,

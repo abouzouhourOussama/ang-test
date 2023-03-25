@@ -1,0 +1,10 @@
+
+<input type="text" [(ngModel)]="currentCity">
+
+<button (click)="getWeather()">get weather</button>
+
+<ul *ngIf="city" >
+    <li>{{city.name}}</li>
+    <li>{{city.weather[0].main}}</li>
+    <li>{{city.sys.country}}</li>
+</ul>

@@ -60,19 +60,35 @@ export class ItemsStorageComponent {
     localStorage.setItem("lists",itemsString)
     //màj tableau courant
     this.items=arrObj
+    
+
 
   }
 
-  updateQty(i:number){
-    alert(i)
+  updateQty(name:string){
+    alert(name)
+    console.log(this.items);
+    
+    this.items=this.items.filter(
+      (elm)=>{
+       elm.qty++;
+       
+      return elm;
+      }
+    )
+
+
     let arr=localStorage.getItem("lists")
+
 
     //string => objet
     if(arr!=null){
       var arrObj=JSON.parse(arr)
     }
-    console.log(arrObj[i]);
+    //console.log(arrObj[i]);
     
+
+
   }
 
 

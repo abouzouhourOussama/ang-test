@@ -1,0 +1,9 @@
+<input type="text" [(ngModel)]="this.currenInput.note"   >
+<select>
+    <option>normal</option>
+    <option>blue</option>
+</select>
+<button (click)="addTodo()" >Add Note</button>
+<div *ngFor="let todo of todoList" >
+    <h4>{{todo.note}}</h4>
+</div>

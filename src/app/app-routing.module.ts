@@ -15,6 +15,8 @@ import { StudentComponent } from './components/student/student.component';
 import { UsersComponent } from './components/users/users.component';
 import { XoGameComponent } from './components/xo-game/xo-game.component';
 import { ItemsStorageComponent } from './components3/items-storage/items-storage.component';
+import { TodoListComponent } from './components3/todo-list/todo-list.component';
+import { Weather2Component } from './components3/weather2/weather2.component';
 
 
 const routes: Routes = [
@@ -53,6 +55,8 @@ const routes: Routes = [
   {path:"students/sDetails/:id",component:StudentDetailsComponent}
   ,{path:"apiTest",component:ApiTestComponent}
   ,{path:"itemsStorage",component:ItemsStorageComponent }
+  ,{path:"weather",component:Weather2Component }
+  ,{path:"todoList",component:TodoListComponent }
 ];
 
 @NgModule({
