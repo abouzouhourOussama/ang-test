@@ -23,6 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { StudentComponent } from './components/student/student.component';
 import { StudentDetailsComponent } from './components/student-details/student-details.component';
 import { ApiTestComponent } from './component2/api-test/api-test.component';
+import { ItemsStorageComponent } from './components3/items-storage/items-storage.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { ApiTestComponent } from './component2/api-test/api-test.component';
     UsersComponent,
     StudentComponent,
     StudentDetailsComponent,
-    ApiTestComponent
+    ApiTestComponent,
+    ItemsStorageComponent
   ],
   imports: [
     BrowserModule,
